@@ -56,13 +56,11 @@ function calcularSuma() {
     for (let i = 0; i < numeros.length; i++) {
         suma += numeros[i];
     }
-    const promedio = suma / numeros.length; // Para calcular el promedio
+    const promedio = suma / numeros.length; 
     document.getElementById('resultado').innerText = 
         "Suma total: " + suma + " - Promedio: " + promedio.toFixed(2);
 }
-// Respuesta: Para calcular el promedio de los números, se divide la suma total entre la cantidad de elementos en el arreglo.
 
-// Bucle while para solicitar números hasta un negativo
 function solicitarNumero() {
     let numero;
     while (true) {
@@ -71,9 +69,7 @@ function solicitarNumero() {
     }
     document.getElementById('resultado').innerText = "Número negativo ingresado. Fin del bucle.";
 }
-// Respuesta: Si se inicializa el contador con un valor negativo, el bucle `while` no se ejecutará si la condición depende de un valor positivo inicial.
 
-// Bucle do...while para pedir una contraseña hasta que sea correcta
 function pedirContrasena() {
     const contrasenaCorrecta = "12345";
     let contrasena;
